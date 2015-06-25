@@ -7,7 +7,7 @@ exports.getSignUp =  function(req, res) {
 exports.postSignUp = function(req, res) {
   var user = new User({
     name: req.body.name,
-    username: req.body.username,
+    email: req.body.username,
     password: req.body.password
   })
   user.save();

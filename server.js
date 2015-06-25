@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({
 
 
 //Mongoose Connection with MongoDB
-mongoose.connect('mongodb://localhost/codegurukul');
+mongoose.connect('mongodb://localhost/devcodegurukul');
 mongoose.connection.on('error', function() {
   console.error('MongoDB Connection Error. Please make sure that MongoDB is running.');
 });
