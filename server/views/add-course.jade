@@ -1,0 +1,14 @@
+extends ./includes/layout
+block main
+  .container
+    .row
+      .col-md-6.col-md-offset-4
+        form(action='/addcourse' method='post')
+          input.form-control(type='text' placeholder='Course Name' name="courseName")
+          input.form-control(type='date' placeholder='Date' name="date")
+          .checkbox
+            label
+              input(type="checkbox" name="featuredName") 
+              |Featured
+          button.btn.btn-default(type='submit') Submit
+          
